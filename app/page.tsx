@@ -1,3 +1,4 @@
+export const dynamic = 'auto';
 import getCurrentUser from "./actions/getCurrentUser";
 import getListings, { IListingParams } from "./actions/getListings";
 import EmptyState from "./components/EmptyState";
