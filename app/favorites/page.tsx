@@ -1,7 +1,9 @@
-import EmptyState from "../components/EmptyState";
 
-import getCurrentUser from "../actions/getCurrentUser";
+import EmptyState from "@/app/components/EmptyState";
+
+import getCurrentUser from "@/app/actions/getCurrentUser";
 import getFavoritesListing from "../actions/getFavoritesListing";
+
 import FavoritesClient from "./FavoritesClient";
 
 const ListingPage = async () => {
@@ -12,9 +14,9 @@ const ListingPage = async () => {
         return (
             <EmptyState
                 title="No favorites found"
-                subtitle="Look like you have no favorite listing"
+                subtitle="Looks like you have no favorite listings."
             />
-        )
+        );
     }
 
     return (
@@ -22,7 +24,7 @@ const ListingPage = async () => {
             listings={listings}
             currentUser={currentUser}
         />
-    )
+    );
 }
 
 export default ListingPage;
